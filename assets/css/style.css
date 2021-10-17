@@ -1,0 +1,297 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Pacifico-Regular";
+  src: url("../font/Pacifico/Pacifico-Regular.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-Light";
+  src: url("../font/Ubuntu/Ubuntu-Light.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-bold";
+  src: url("../font/Ubuntu/Ubuntu-Bold.ttf");
+}
+.container {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 1fr 100px;
+  grid-template-rows: 90px 790px 350px auto 100px auto auto 120px;
+}
+h2.fontTitle {
+  font-family: "Pacifico";
+  font-size: 1.9em;
+}
+h3.fontTitle {
+  font-family: "Pacifico";
+  font-size: 1.9em;
+  text-align: center;
+}
+h3 {
+  font-family: "ubuntu-bold";
+  font-size: 1.9;
+}
+p {
+  font-family: "ubuntu-light";
+}
+/*HEADER*/
+header {
+  grid-column: 1/6;
+  grid-row: 1/2;
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 90px;
+  background-color: #f0f3f3;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  grid-column: 5/8;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #7a4af6;
+  font-family: "ubuntu-light";
+}
+header nav ul li a:hover {
+  color: #7a4af6;
+  border-top: 2px solid;
+}
+
+header nav img#logoJustine {
+  grid-column: 1/3;
+  grid-row: 1;
+  margin-left: 50px;
+}
+
+/*SLOGAN*/
+div#slogan {
+  grid-column: 1/6;
+  grid-row: 2/3;
+  background-image: url(../img/BackgroundComputer1.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div#slogan h1 {
+  text-align: left;
+  font-family: "ubuntu-light";
+  font-size: 1.5em;
+  color: #7a4af6;
+}
+h1 span {
+  font-family: "ubuntu-bold";
+}
+
+/* Présentation*/
+
+#justinePresentation {
+  grid-column: 1/6;
+  grid-row: 3/4;
+  background-color: #7a4af6;
+  color: whitesmoke;
+  padding-top: 50px;
+}
+
+#bloc1Presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.justinePresentationTittle {
+  text-align: left;
+  padding-left: 200px;
+}
+div#justinePresentation img {
+  border-radius: 100px;
+}
+div#justinePresentation p {
+  margin-left: 30px;
+  text-align: left;
+}
+/*Compétences informatiques*/
+#computerSkills {
+  grid-column: 2/5;
+  grid-row: 4/5;
+  padding-top: 30px;
+}
+.computerTitle {
+  text-align: center;
+}
+.logicielTitle {
+  font-size: 1.3em;
+  text-align: center;
+  padding-top: 40px;
+}
+.suiteAdobe {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.frontEnd {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 90px 230px;
+  border-style: outset;
+  border-radius: 15px;
+}
+h3.webDev {
+  grid-column: 2/5;
+  grid-row: 1/2;
+  align-items: center;
+  font-family: "Ubuntu-Bold";
+}
+h3.cms {
+  grid-column: 6/9;
+  grid-row: 1/2;
+}
+div.logosDev {
+  grid-column: 2/5;
+  grid-row: 2/2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+div.logosDev2 {
+  grid-column: 6/8;
+  grid-row: 2/2;
+}
+div.logosDev3 {
+  grid-column: 8/9;
+  grid-row: 2/2;
+}
+
+/*autres logiciels*/
+
+.otherLogiciel {
+  display: none;
+}
+
+.bloc {
+  padding: 40px;
+  align-items: center;
+  text-align: center;
+}
+div.bloc img {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+div.bloc p {
+  text-align: center;
+}
+.imageZoom {
+  transition: 0.4s;
+}
+.imageZoom:hover {
+  transform: scale(1.5);
+}
+/*Langues*/
+#languageSkills {
+  grid-column: 2/5;
+  grid-row: 5/6;
+  display: none;
+}
+.blocLanguage {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/*Carrière*/
+#career {
+  grid-column: 2/6;
+  grid-row: 6/7;
+}
+/*.line::before {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  width: 7px;
+  height: 100px;
+  left: 500px;
+} /*
+
+/*Contact*/
+div#contactMe {
+  grid-column: 2/5;
+  grid-row: 7/8;
+  background-color: #7a4af6;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  margin: 100px;
+  margin-bottom: 15px;
+  padding: 30px;
+  height: 250px;
+  line-height: 40px;
+}
+
+.hoverLoge {
+  transition: 0.4s;
+}
+.hoverLogo:hover {
+  transform: scale(1.5);
+}
+.pictogrammesReseaux {
+  text-decoration: none;
+  color: white;
+  font-family: "ubuntu-light";
+}
+.picto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+div.picto h4 {
+  font-family: "ubuntu-light";
+}
+/*footer*/
+footer {
+  grid-column: 1/6;
+  grid-row: 8/8;
+  background-color: black;
+  padding: 30px;
+}
+footer p {
+  color: white;
+  text-align: center;
+}
+div.copy {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/*responsive breakpoints*/
+/*@media screen and (min-width: 1024px) {
+  #bloc1Presentation {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+} */
+@media (min-width: 375 px) and (max-width: 767px) {
+  .container {
+    display: none;
+  }
+}
